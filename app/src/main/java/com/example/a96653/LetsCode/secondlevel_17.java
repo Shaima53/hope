@@ -1,6 +1,7 @@
 package com.example.a96653.LetsCode;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,25 @@ public class secondlevel_17 extends AppCompatActivity {
         //TO VIEW SCORE ON BOX
         TextView textView = (TextView)findViewById(R.id.scoreBox_secondleve_l7);
         textView.setText(mySqliteOpenHelper.getChildScore()+"" );
+
+        ////
+        SharedPreferences prefs = getSharedPreferences("prefs26", MODE_PRIVATE);
+        boolean firstStart = prefs.getBoolean("firstStart", true);
+        if (firstStart){
+            //m.addLesson(l2);
+            mySqliteOpenHelper.addQuestion(2);
+            mySqliteOpenHelper.addQuestion(2);
+            mySqliteOpenHelper.addQuestion(2);
+            mySqliteOpenHelper.addQuestion(2);
+            mySqliteOpenHelper.addQuestion(2);
+            SharedPreferences pref = getSharedPreferences("prefs26", MODE_PRIVATE);
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putBoolean("firstStart", false);
+            editor.apply();
+        }
+
+        ////
+
 
 
         //HOME BUTTON

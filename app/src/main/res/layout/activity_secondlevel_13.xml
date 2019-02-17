@@ -33,14 +33,14 @@
         app:srcCompat="@drawable/newnext" />
 
     <ImageView
-        android:id="@+id/soundOn2"
+        android:id="@+id/soundOn_secondlevel_13"
         android:layout_width="30dp"
         android:layout_height="28dp"
         android:layout_marginStart="69dp"
         android:layout_marginTop="21dp"
         android:layout_marginEnd="493dp"
         android:layout_marginBottom="286dp"
-
+        android:onClick="play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.02"
@@ -85,8 +85,6 @@
         android:layout_height="38dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-
-
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -194,7 +192,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/back"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.011"
         app:layout_constraintStart_toStartOf="parent"

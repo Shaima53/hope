@@ -105,7 +105,7 @@
     <string name="tryit">  (جرب بنفسك )   </string>
     <string name="secondlevel_15_1">      بإمكاننا أن نجري عمليات الجمع و الطرح التي تعرفها  على المتغيرات  فمثلاً :    </string>
 
-  <string name="secondlevel_15_3">    إذا كان المتغير   </string>
+    <string name="secondlevel_15_3">    إذا كان المتغير   </string>
     <string name="x">    X=5</string>
     <string name="var">و المتغير </string>
     <string name="y"> Y=1   </string>

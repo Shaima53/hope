@@ -560,15 +560,7 @@ public class firstlevel_7 extends AppCompatActivity {
         res1=0;res2=0;res3=0;res4=0;
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        voicepluto7.pause();
-    }
 
-    public void play(View view) {
-        voicepluto7.play();
-    }//end play method
     public void ShowPopupSolve() {
 
         Button btnClose;

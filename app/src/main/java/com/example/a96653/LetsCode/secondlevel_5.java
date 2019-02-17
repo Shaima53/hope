@@ -1,6 +1,7 @@
 package com.example.a96653.LetsCode;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,13 +10,24 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class secondlevel_5 extends AppCompatActivity {
-
+    MediaPlayer secondlevel_5_voice;
+    voice voice5_secondlevel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secondlevel_5);
 
         final MySQLliteHelper m=new MySQLliteHelper(this);
+
+
+        //create MediaPLayer to play the voice
+        secondlevel_5_voice= MediaPlayer.create(secondlevel_5.this,R.raw.secondlevel_5_voice);
+        voice5_secondlevel=new voice( secondlevel_5_voice);
+        voice5_secondlevel.play();
+
+
+
+
 
         //scoreBox display
         TextView scoredisplay=(TextView) findViewById(R.id.scoreBox_firstlevel5);
@@ -62,5 +74,16 @@ public class secondlevel_5 extends AppCompatActivity {
         Intent goback=new Intent(getApplicationContext(),secondlevel_4.class);
         startActivity(goback);
     }
+
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        voice5_secondlevel.pause();
+    }
+
+    public void play(View view) {
+        voice5_secondlevel.play();
+    }//end play method
 }
 ////

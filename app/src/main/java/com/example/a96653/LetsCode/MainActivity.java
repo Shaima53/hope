@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
             nepton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent gotoneptonlessons=new Intent (getApplicationContext(),secondlevel_17.class);
+                    Intent gotoneptonlessons=new Intent (getApplicationContext(),secondlevel_10_feedback.class);
                     startActivity(gotoneptonlessons);
                 }
             });
@@ -163,8 +163,8 @@ public class MainActivity extends AppCompatActivity {
         try{
         c = Class.forName("com.example.a96653.LetsCode."+name);
 
-         Intent  intent = new Intent(this,c);
-            //Intent  intent = new Intent(this,firstlevel_5.class);
+         //Intent  intent = new Intent(this,c);
+            Intent  intent = new Intent(this,secondlevel_7_feedback2.class);
 
 
         startActivity(intent);}
